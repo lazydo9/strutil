@@ -2,6 +2,7 @@ package strutil
 
 import (
 	"strings"
+	"fmt"
 )
 
 //AlignType text align variable like center or left
@@ -19,6 +20,7 @@ const (
 // - strutil.Left
 // - strutil.Right
 func Align(str string, alignTo AlignType, width int) string {
+	fmt.Println("my!")
 	switch alignTo {
 	case Center:
 		return AlignCenter(str, width)
